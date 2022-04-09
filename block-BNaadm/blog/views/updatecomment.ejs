@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/comment/<%=comment.id%>" method="POST">
+        <input type ="text" name = "author" placeholder="Enter author" value="<%=comment.author%>"><br><br>
+        <textarea type ="textarea" name = "content" rows="4" placeholder="Enter content" >
+            <%=comment.content%>
+        </textarea><br><br>
+           <button type="submit">Edd Comment</button>
+   </form>
+   
+</body>
+</html>
