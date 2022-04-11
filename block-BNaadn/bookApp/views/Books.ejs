@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <%books.forEach((book) =>{%>
+        <h2><%=book.title%></h2>
+        <p><%=book.pages%></p>
+        <a href="/users/<%=book.id%>"><button>More</button></a>
+        <a href="/users/<%=book.id%>/edit"><button>Edit</button></a>
+        <a href="/users/<%=book.id%>/delete"><button>Delete</button></a>
+    <% })%>
+</body>
+</html>
